@@ -1,0 +1,87 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="1.8" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_201&quot;" />
+      <homePath value="C:/Program Files/Java/jdk1.8.0_201" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/deploy.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/access-bridge-64.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/jfxrt.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/sunmscapi.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/javaws.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/jfr.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/jfxswt.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/plugin.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/" type="simple" />
+            <root url="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (selenium-training)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="D:\work\github\selenium-training\venv\Scripts\python.exe" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/DLLs" type="simple" />
+            <root url="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib" type="simple" />
+            <root url="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32" type="simple" />
+            <root url="file://D:/work/github/selenium-training/venv" type="simple" />
+            <root url="file://D:/work/github/selenium-training/venv/Lib/site-packages" type="simple" />
+            <root url="jar://D:/work/github/selenium-training/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://D:/work/github/selenium-training/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.IdeaIC2019.1/system/python_stubs/1624829810" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>
