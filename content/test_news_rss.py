@@ -53,8 +53,8 @@ def wait_time():
     return time.sleep(5)
 
 
-def test_drum_create(driver):
-    """Применение барабана вещания"""
+def test_news_rss(driver):
+    """Создание источника новостей"""
 
     test_login(driver)
     time.sleep(5)
@@ -64,70 +64,64 @@ def test_drum_create(driver):
 
     WebDriverWait(driver, 30)
 
-    # Эфир
+    # Контент
 
-    driver.find_elements_by_tag_name("div[class='left-nav__menu-unit-header-title']")[0].click()
-
-    WebDriverWait(driver, 10)
-
-    # Управление барабанами вещания
-
-    driver.find_element_by_tag_name("a[href='/ether/broadcastRevolvers']").click()
+    driver.find_elements_by_tag_name("div[class='left-nav__menu-unit-header-title']")[1].click()
 
     WebDriverWait(driver, 10)
 
-    # Выбрать город
+    # Рубрики
 
-    driver.find_elements_by_tag_name("div[class='vue-select__selected']")[0].click()
+    driver.find_elements_by_tag_name("div[class='left-nav__menu-child-unit'] img")[0].click()
+
+    WebDriverWait(driver, 10)
+
+    # Новости
+
+    driver.find_element_by_tag_name("a[href='/content/rubrics/news']").click()
+
+    WebDriverWait(driver, 10)
+
+    # Вкладка "Источники новостей"
+
+    driver.find_elements_by_tag_name("div[class='tab-nav__tab']")[1].click()
+
+    WebDriverWait(driver, 10)
+
+    # Добавить источник
+
+    driver.find_elements_by_tag_name("button[class='btn btn-primary margin-bottom']")[2].click()
+
+    # Заполнить поля "Источник новостей" и "Город"
+
+    driver.find_element_by_tag_name("input[class='io tip']").send_keys("http://habrahabr.ru/rss/best/")
+
+    WebDriverWait(driver, 10)
+
+    driver.find_elements_by_tag_name("div[tabIndex='-1']")[0].click()
 
     wait_time()
 
-    driver.find_elements_by_tag_name("input[tabindex='-1']")[2].send_keys("Москва")
+    driver.find_elements_by_tag_name("input[tabIndex='-1']")[0].send_keys("Москва")
 
     wait_time()
 
-    driver.find_elements_by_tag_name("input[tabindex='-1']")[2].send_keys(Keys.ENTER)
+    driver.find_elements_by_tag_name("input[tabIndex='-1']")[0].send_keys(Keys.ENTER)
 
     wait_time()
 
-    driver.find_elements_by_tag_name("div[class='vue-select__option']")[4].click()
+    driver.find_elements_by_tag_name("div[id='city'] div[id='4']")[0].click()
+
+    # Нажать кнопку "Сохранить"
+
+    driver.find_element_by_tag_name("button[class='btn btn-success']").click()
+
+    wait.until(EC.presence_of_element_located((By.TAG_NAME, "span[data-notify='message']")))
+
+    notify_import_news = driver.find_elements_by_tag_name("span[data-notify='message']")[0].get_property("innerText")
+
+    wait.until(EC.presence_of_element_located((By.TAG_NAME, "span[data-notify='message']")))
 
     wait_time()
 
-    # Выбрать барабан
-
-    driver.find_elements_by_tag_name("div[class='vue-select__selected']")[1].click()
-
-    wait_time()
-
-    driver.find_elements_by_tag_name("input[tabindex='-1']")[2].send_keys("Autotest Drum")
-
-    wait_time()
-
-    driver.find_elements_by_tag_name("input[tabindex='-1']")[2].send_keys(Keys.ENTER)
-
-    wait_time()
-
-    driver.find_elements_by_tag_name("div[class='vue-select__option']")[4].click()
-
-    # Нажать кнопку "Применить барабан"
-
-    driver.find_elements_by_tag_name("button[class='btn btn-primary']")[0].click()
-
-    # Проверка нотификации
-
-    drum_apply_notify = driver.find_element_by_tag_name("span[data-notify='message']").get_property("innerText")
-
-    valid_notify = "Барабан успешно применен"
-
-    if drum_apply_notify == valid_notify:
-        print("\n Drum has apply successful.")
-    else:
-        print("\n Drum not applied. Test Failed ")
-
-    # Поиск примененного барабана в таблице
-
-    driver.find_element_by_tag_name("i[class='material-icons icon-normal active']").click()
-
-    driver.find_element_by_tag_name("i[class='material-icons icon-normal active']").click()
-
+    print('Test Done')
